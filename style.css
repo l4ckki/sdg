@@ -1,42 +1,86 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.footer {
-    height: 89px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/village.jpg);
-    background-position: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer-container {
-    margin: 0px auto;
 
+body {
+  font-family: 'Oxygen', sans-serif;
+  background-color: rgb(F7, F7, F7);
+  color: rgb(2E, 2E, 2E);
 }
-.nav {
-    list-style-type: none;
-    font-family: "Oxygen", sans-serif;
-    font-size: 11px;
-    line-height: 26px;
-    letter-spacing: 1px;
-    margin-left: 320px;
-    display: inline-flex;
+
+.header {
+  width: 100%;
+  padding-top: 20px;
 }
-.nav-item {
-    text-decoration: none;
-    color: #ffffff;
-    margin: 0px 20px; 
+
+.header__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.Escape-footer {
-    font-family: "Lora", sans-serif;
-    font-size: 26px;
-    line-height: 26px;
-    font-weight: 100px;
-    text-decoration: none;
-    color: #ffffff;
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.escape {
+  font-family: Lora, sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header__menu-link {
+  font-family: Oxygen, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+.footer {
+  height: 89px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/footer/footer-background.jpg);
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.footer__menu-link {
+  color: rgba(FF, FF, FF, 0.6);
+  font-family: Oxygen;
+  font-size: 11px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin: 0px 10px;
 }
