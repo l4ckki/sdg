@@ -1,86 +1,243 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Oxygen', sans-serif;
-  background-color: rgb(F7, F7, F7);
-  color: rgb(2E, 2E, 2E);
-}
-
 .header {
-  width: 100%;
-  padding-top: 20px;
-}
-
-.header__inner {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.escape {
-  font-family: Lora, sans-serif;
-  font-size: 26px;
-  line-height: 26px;
-}
-
-.header__menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-.header__menu-link {
-  font-family: Oxygen, sans-serif;
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0.6px;
-  margin: 0px 10px;
-  text-decoration: none;
-}
-
-.footer {
-  height: 89px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/footer/footer-background.jpg);
-  background-position: 0;
-  background-repeat: no-repeat;
+  background: no-repeat url(img/header/header-background.jpg);
   background-size: cover;
-  color: #ffffff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header__container {
+  padding-top: 184px;
+  padding-bottom: 170px;
+  margin: 0px auto;
+  text-align: center;
+  color: white;
+}
+
+.header__title {
+  font: 400 50px/51px "Lora";
+  letter-spacing: 2px;
+  margin-bottom: 20px; 
+}
+
+.header__subtitle {
+  font: 200 17px/20px "Oxygen";
+  margin-bottom: 31px;
+}
+
+.header__button {
+  font: 700 26px/26px "Lora";
+  text-decoration: none;
+  padding: 24px 62px;
+  background-color: orange;
+  display: inline-block;
+  color: white;
+  
+}
+
+.navigation {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.navigation__escape {
+  font: 400 26px/26px "Lora";
+  text-align: left;
+  text-decoration: none;
+  margin-right: 100px;
+  color: white;
+}
+
+.navigation__list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  flex-flow: wrap;
+  text-align: center;
+  margin-left: 200px;
+}
+
+.navigation__item {
+
+}
+
+.navigation__link {
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  font: 200 11px/26px "Oxygen";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.features {
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.features__list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  flex-flow: row wrap;
   justify-content: center;
 }
 
-.footer__inner {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footer__nav {
-  display: flex;
-  align-items: center;
-}
-
-.footer__menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-.footer__menu-link {
-  color: rgba(FF, FF, FF, 0.6);
-  font-family: Oxygen;
-  font-size: 11px;
-  line-height: 26px;
-  letter-spacing: 1px;
+.features__list-link {
+  font: 300 14px/20px "Lora";
+  color: rgb(76, 80, 88);
   text-decoration: none;
-  margin: 0px 10px;
+  margin: 0px 40px;
 }
+
+.posts {
+  
+}
+
+.posts__title {
+  text-align: center;
+  font: 100 20px/27px "Oxygen";
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.featured-card__title {
+  font: 200 27px/30px "Lora";
+  margin-bottom: 10px;
+}
+
+.featured-card__subtitle {
+  font: 200 14px/25px "Oxygen";
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.featured-card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font: 200 12px/35px "Oxygen";
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.featured-card__author {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.featured-card__sign {
+  font-size: 11px;
+  margin-left: 10px;
+}
+
+.posts__featured-posts {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.posts__featured-card_1 {
+  background: no-repeat url(img/main/polar.jpg);
+}
+
+.posts__featured-card_2 {
+  background: no-repeat url(img/main/lanterns.png);
+}
+
+.featured-card {
+  display: flex;
+  width: 480px;
+  min-height: 280px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: end;
+  background-size: cover;
+  color: white;
+  padding: 15px 20px;
+}
+
+.featured-card__content {
+  text-align: left;
+}
+
+.featured-card__avatar { 
+
+}
+
+.posts__most-recent {
+  display: flex;
+  flex-flow: wrap-reverse row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 25px 24px;
+  margin-bottom: 40px;
+  padding: 0px 200px;
+}
+
+.recent-card__content {
+  width: 296px;
+  min-height: 291px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.recent-card__img {
+  margin-bottom: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recent-card__description {
+  min-height: 93px;
+}
+
+.recent-card__title {
+  font: 400 16px/21px "Lora";
+  color: rgba(10, 13, 15, 1);
+  margin-bottom: 5px;
+}
+
+.recent-card__subtitle {
+  font: 600 13px/19px "Oxygen";
+  color: rgba(122, 122, 122, 1);
+  margin-bottom: 10px;
+}
+
+.recent-card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font: 300 12px/35px "Oxygen";
+  color: rgba(99, 99, 9, 1); 
+  background-color: rgba(252, 252, 252, 1); 
+}
+
+.recent-card__sign {
+  margin-left: 5px;
+}
+
+.footer {
+  background: no-repeat url(img/footer/footer-background.jpg);
+  background-size: cover;
+  background-position: 0;
+}
+
