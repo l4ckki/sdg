@@ -84,7 +84,7 @@
 .features {
   background-color: white;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .features__list {
@@ -114,6 +114,9 @@
 .title__text {
   font: 100 20px/27px "Oxygen";
   letter-spacing: 2px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #DEDEDE;
 }
 
 .featured-card__title {
