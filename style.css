@@ -34,7 +34,7 @@
 }
 
 .header__button {
-  font: 700 26px/26px "Lora";
+  font: 400 26px/26px "Lora";
   text-decoration: none;
   padding: 24px 62px;
   background-color: orange;
@@ -108,9 +108,12 @@
 
 .posts__title {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.title__text {
   font: 100 20px/27px "Oxygen";
   letter-spacing: 2px;
-  margin-bottom: 20px;
 }
 
 .featured-card__title {
@@ -153,7 +156,7 @@
 }
 
 .posts__featured-card_1 {
-  background: no-repeat url(img/main/polar.jpg);
+  background: no-repeat url(img/main/polar.png);
 }
 
 .posts__featured-card_2 {
@@ -162,8 +165,8 @@
 
 .featured-card {
   display: flex;
-  width: 480px;
-  min-height: 280px;
+  width: 460px;
+  height: 280px;
   overflow: hidden;
   flex-direction: column;
   justify-content: end;
@@ -231,13 +234,16 @@
   background-color: rgba(252, 252, 252, 1); 
 }
 
+.recent-card__avatar {
+  margin_left: 5px;
+}
+
 .recent-card__sign {
   margin-left: 5px;
 }
 
 .footer {
-  background: no-repeat url(img/footer/footer-background.jpg);
+  background: no-repeat url(img/footer/footer-background.png);
   background-size: cover;
   background-position: 0;
 }
-
