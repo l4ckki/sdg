@@ -12,40 +12,45 @@
 .text {
   font-size: 24px;
   line-height: 35px;
-  color: rgb(2E, 2E, 2E);
   font-family: "Oxygen";
-  margin: 100px 0px;
 }
 .text .title {
   font-size: 50px;
   line-height: 51px;
   letter-spacing: 2px;
   font-family: "Lora";  
-  font-weight: lighter; 
+  font-weight: lighter;
+  margin-top: 100px; 
+}
+.card-link {
+  text-decoration: none;
 }
 .text .subtitle {
     opacity: 63%;
     font-size: 17px;
     line-height: 20px;
-    margin: 30px 0px;
+    margin-top: 30px;
+    margin-bottom: 120px; 
+    color: #2E2E2E;
 }
 .text .main.text {
-  color: rgb(10, C, E);
+  color: #101315;
   text-align: start;
-  margin: 140px 240px 0px 240px;
+  padding: 140px 240px 100px 240px;
   font-weight: 100;
+  background-color: #f7f7f7;
 }
 .Polar.Lights {
   width: 100%;
   background-size: cover;
   background-position: center;
   height: 534px;
-  background-image: url("img/main/polar.png");
+  background-image: url("../../img/main/polar.png");
   background-repeat: no-repeat;
 }
 .footer {
   height: 89px; 
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/footer/footer-background.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/footer/footer-background.png");
   background-position: 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,7 +60,7 @@
   justify-content: center;
 }
 .footer-container {
-  margin: 0px auto;
+  margin: 0 auto;
 }
 .nav {
   list-style-type: none;
